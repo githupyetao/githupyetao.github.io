@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta chaset = "UTF-8">
+	<meta name="viewport" content="width = device-width,initial-scale=1">
+	<title>一个简易的网站</title>
+	<style type = "text/css">
+		*{margin:0px;padding:0px;}
+		.header{width:100%;height:150px;background-color:red;}
+		.body{width:100%;height:500px;background-color:blue;text-align: center;}
+		.body .leftcontent{width:25%;height:100%;background-color:#1E90FF;float: left;}
+		.body .centercontent{width:50%;height:100%;background-color:#D3D3D3;float: left;}
+		.body .rightcontent{width:25%;height:100%;background-color:yellow;float: left;}
+		.foot{width:100%;height:100px;background-color:red;}
+		@media screen and (max-width: 600px){
+            .header{width: 320px;height: 100px;background-color:red;}
+            .body{width:320px;height:400px;background-color:blue;text-align:center;}
+			.body .leftcontent{width:100%;height:25%;background-color:#1E90FF;}
+			.body .centercontent{width:100%;height:50%;background-color:#D3D3D3;}
+			.body .rightcontent{width:100%;height:25%;background-color:yellow;}
+			.foot{width:320px;height:100px;background-color:red;display: none;}
+        }
+        @media screen and (min-width: 600px){
+            *{margin:0px;padding:0px;}
+		.header{width:100%;height:150px;background-color:red;}
+		.body{width:100%;height:500px;background-color:blue;text-align: center;}
+		.body .leftcontent{width:25%;height:100%;background-color:#1E90FF;float: left;}
+		.body .centercontent{width:50%;height:100%;background-color:#D3D3D3;float: left;}
+		.body .rightcontent{width:25%;height:100%;background-color:yellow;float: left;}
+		.foot{width:100%;height:100px;background-color:red;}
+        }
+	</style>
+</head>
+<body>
+	<div class = "header"></div>
+	<div class = "body">
+		<div class = "leftcontent">1</div>
+		<div class = "centercontent">2</div>
+		<div class = "rightcontent">3</div>
+	</div>
+	<div class = "foot"></div>
+
+</body>
+</html>
